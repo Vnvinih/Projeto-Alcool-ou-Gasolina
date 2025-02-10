@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -12,8 +12,8 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <!-- Javascript -->
-    <script src="index.js"></script>
-    
+     <script src="index.js"></script>
+
     <title>Àlcool ou Gasolina</title>
 
     <head>
@@ -22,6 +22,7 @@
         <div class="container mt-5">
           <div class="row">
             <div class="col-md-12 d-flex justify-content-center">
+
               <div class="card">
                 <div class="card body">
 
@@ -38,6 +39,7 @@
                         type="text"
                         placeholder="Digite o preço do álcool (ex: 2.20)"
                         class="form-control"
+                        id="alcool"
                       />
 
                     </div>
@@ -49,12 +51,14 @@
                         type="text"
                         placeholder="Digite o preço da gasolina (ex: 3.50)"
                         class="form-control"
+                        id="gasolina"
                       />
 
                     </div>
 
-                    <div class="alert alert-primary">resultado</div>
-                    <button type="button" class="btn btn-primary">
+                    <div class="alert alert-primary" id="resultado">resultado</div>
+
+                    <button type="button" class="btn btn-primary" onclick="calcularMelhorPreco()">
                       Calcular
                     </button>
 
